@@ -54,14 +54,13 @@ namespace ReyfiBurguer
             {
                 if (sqlData["NombreUsuario"].ToString() == UsuarioTextBox.Text && sqlData["Contraseña"].ToString() == ContraseñaTextBox.Text && sqlData["TipoUsuario"].ToString() == "Administrador")
                 {
-                    MessageBox.Show("Usuario Correcto");
-                    MenuPrincipalAdmin MenuPrincipalAdmin = new MenuPrincipalAdmin();
-                    MenuPrincipalAdmin.Show();
+                    MessageBox.Show("Bienvenido usuario administrador");
+                    new MenuPrincipalAdmin().Show();
                     this.Hide();
                 }
                 else if(sqlData["NombreUsuario"].ToString() == UsuarioTextBox.Text && sqlData["Contraseña"].ToString() == ContraseñaTextBox.Text && sqlData["TipoUsuario"].ToString() == "Cajero")
                 {
-                    MessageBox.Show("Usuario Correcto");
+                    MessageBox.Show("Bienvenido usuario cajero");
                     new MenuPrincipalCajero().Show();
                     this.Hide();
                 }

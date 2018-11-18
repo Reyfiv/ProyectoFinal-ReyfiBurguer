@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipalCajero));
-            this.button1 = new System.Windows.Forms.Button();
+            this.IniciarCajaButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // IniciarCajaButton
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::ReyfiBurguer.Properties.Resources.Stack_of_Money_100px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(53, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 133);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Iniciar caja";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.IniciarCajaButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.IniciarCajaButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IniciarCajaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IniciarCajaButton.Image = global::ReyfiBurguer.Properties.Resources.Stack_of_Money_100px;
+            this.IniciarCajaButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.IniciarCajaButton.Location = new System.Drawing.Point(53, 58);
+            this.IniciarCajaButton.Name = "IniciarCajaButton";
+            this.IniciarCajaButton.Size = new System.Drawing.Size(190, 133);
+            this.IniciarCajaButton.TabIndex = 0;
+            this.IniciarCajaButton.Text = "Iniciar caja";
+            this.IniciarCajaButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.IniciarCajaButton.UseVisualStyleBackColor = false;
             // 
             // MenuPrincipalCajero
             // 
@@ -52,11 +53,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ReyfiBurguer.Properties.Resources.Logo;
             this.ClientSize = new System.Drawing.Size(298, 242);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.IniciarCajaButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuPrincipalCajero";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal (Cajero)";
             this.ResumeLayout(false);
 
@@ -64,6 +66,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button IniciarCajaButton;
     }
 }

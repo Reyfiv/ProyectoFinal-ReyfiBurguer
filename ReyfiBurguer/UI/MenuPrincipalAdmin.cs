@@ -25,6 +25,9 @@ namespace ReyfiBurguer.UI
             
         }
 
-
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rProductos().Show();
+        }
     }
 }

@@ -174,5 +174,6 @@ namespace ReyfiBurguer.UI.Registros
             else
                 MessageBox.Show("No existente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
     }
 }

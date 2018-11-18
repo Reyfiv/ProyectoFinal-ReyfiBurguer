@@ -135,9 +135,9 @@
             this.EliminarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EliminarButton.Image = global::ReyfiBurguer.Properties.Resources.Delete_File_32px;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(301, 287);
+            this.EliminarButton.Location = new System.Drawing.Point(294, 287);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(75, 58);
+            this.EliminarButton.Size = new System.Drawing.Size(88, 58);
             this.EliminarButton.TabIndex = 16;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
