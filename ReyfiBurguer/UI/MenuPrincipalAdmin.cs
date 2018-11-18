@@ -1,4 +1,5 @@
-﻿using ReyfiBurguer.UI.Registros;
+﻿using ReyfiBurguer.Entidades;
+using ReyfiBurguer.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,17 +12,17 @@ using System.Windows.Forms;
 
 namespace ReyfiBurguer.UI
 {
-    public partial class MenuPrincipal : Form
+    public partial class MenuPrincipalAdmin : Form
     {
-        public MenuPrincipal()
+        public MenuPrincipalAdmin()
         {
             InitializeComponent();
         }
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rUsuarios rUsuario = new rUsuarios();
-            rUsuario.Show();
+             new rUsuarios().Show();
+            
         }
 
 

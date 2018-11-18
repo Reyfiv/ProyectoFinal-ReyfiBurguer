@@ -64,11 +64,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\MenuPrincipal.cs">
+    <Compile Include="UI\MenuPrincipalAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <Compile Include="UI\MenuPrincipalAdmin.Designer.cs">
+      <DependentUpon>MenuPrincipalAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\MenuPrincipalCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\MenuPrincipalCajero.Designer.cs">
+      <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\rUsuarios.cs">
       <SubType>Form</SubType>
@@ -89,8 +95,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="UI\MenuPrincipalAdmin.resx">
+      <DependentUpon>MenuPrincipalAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\MenuPrincipalCajero.resx">
+      <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rUsuarios.resx">
       <DependentUpon>rUsuarios.cs</DependentUpon>
@@ -115,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripst\Scripts.sql" />
+    <None Include="Resources\Stack of Money_100px.png" />
     <None Include="Resources\Delete File_32px.png" />
     <None Include="Resources\Save_32px.png" />
     <None Include="Resources\Add List_32px1.png" />

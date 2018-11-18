@@ -105,6 +105,7 @@
             // 
             this.ContraseñaTextBox.Location = new System.Drawing.Point(186, 145);
             this.ContraseñaTextBox.Name = "ContraseñaTextBox";
+            this.ContraseñaTextBox.PasswordChar = '*';
             this.ContraseñaTextBox.Size = new System.Drawing.Size(219, 23);
             this.ContraseñaTextBox.TabIndex = 6;
             // 
@@ -214,6 +215,7 @@
             // 
             this.ConfirmarContraseñaTextBox.Location = new System.Drawing.Point(186, 187);
             this.ConfirmarContraseñaTextBox.Name = "ConfirmarContraseñaTextBox";
+            this.ConfirmarContraseñaTextBox.PasswordChar = '*';
             this.ConfirmarContraseñaTextBox.Size = new System.Drawing.Size(219, 23);
             this.ConfirmarContraseñaTextBox.TabIndex = 19;
             // 

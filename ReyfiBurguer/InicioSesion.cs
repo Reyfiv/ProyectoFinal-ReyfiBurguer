@@ -1,4 +1,5 @@
 ﻿using ReyfiBurguer.UI;
+using ReyfiBurguer.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,16 +47,22 @@ namespace ReyfiBurguer
         {
             SqlConnection conectar = new SqlConnection(@"Data Source =.\sqlExpress; Initial Catalog = ReyfiBurgerDb;" + "Integrated Security = True;");
             conectar.Open();
-            string cd = "Select NombreUsuario, Contraseña from Usuarios where NombreUsuario = '" + UsuarioTextBox.Text + "' and Contraseña='" + ContraseñaTextBox.Text + "'";
+            string cd = "Select NombreUsuario, Contraseña, TipoUsuario from Usuarios where NombreUsuario = '" + UsuarioTextBox.Text + "' and Contraseña='" + ContraseñaTextBox.Text + "'";
             SqlCommand command = new SqlCommand(cd, conectar);
             SqlDataReader sqlData = command.ExecuteReader();
             if (sqlData.Read())
             {
-                if (sqlData["NombreUsuario"].ToString() == UsuarioTextBox.Text && sqlData["Contraseña"].ToString() == ContraseñaTextBox.Text)
+                if (sqlData["NombreUsuario"].ToString() == UsuarioTextBox.Text && sqlData["Contraseña"].ToString() == ContraseñaTextBox.Text && sqlData["TipoUsuario"].ToString() == "Administrador")
                 {
                     MessageBox.Show("Usuario Correcto");
-                    MenuPrincipal menuPrincipal = new MenuPrincipal();
-                    menuPrincipal.Show();
+                    MenuPrincipalAdmin MenuPrincipalAdmin = new MenuPrincipalAdmin();
+                    MenuPrincipalAdmin.Show();
+                    this.Hide();
+                }
+                else if(sqlData["NombreUsuario"].ToString() == UsuarioTextBox.Text && sqlData["Contraseña"].ToString() == ContraseñaTextBox.Text && sqlData["TipoUsuario"].ToString() == "Cajero")
+                {
+                    MessageBox.Show("Usuario Correcto");
+                    new MenuPrincipalCajero().Show();
                     this.Hide();
                 }
             }
