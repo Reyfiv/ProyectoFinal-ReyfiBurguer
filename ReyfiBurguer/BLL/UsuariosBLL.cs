@@ -10,6 +10,8 @@ namespace ReyfiBurguer.BLL
 {
     public class UsuariosBLL
     {
+        
+
         public static bool Guardar(Usuarios usuario)
         {
             bool paso = false;
@@ -105,6 +107,14 @@ namespace ReyfiBurguer.BLL
                 throw;
             }
             return usuarios;
+        }
+
+        public static void IniciarSecion(string usuario, string contraseña, string tipoUsuario)
+        {
+            Usuarios usuarios = new Usuarios();
+            usuarios.NombreUsuario = usuario;
+            usuarios.Contraseña = contraseña;
+            usuarios.TipoUsuario = tipoUsuario;
         }
     }
 }

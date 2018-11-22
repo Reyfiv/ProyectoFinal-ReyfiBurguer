@@ -7,6 +7,8 @@ namespace ReyfiBurguer.DAL
     {
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Productos> Productos { get; set; }
+        public DbSet<Combos> Combos { get; set; }
+      
 
         public Contexto() : base("ConStr")
         {

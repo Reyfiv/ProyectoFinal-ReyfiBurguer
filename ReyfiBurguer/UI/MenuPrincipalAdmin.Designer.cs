@@ -89,6 +89,7 @@
             this.combosToolStripMenuItem.Name = "combosToolStripMenuItem";
             this.combosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.combosToolStripMenuItem.Text = "Combos";
+            this.combosToolStripMenuItem.Click += new System.EventHandler(this.combosToolStripMenuItem_Click);
             // 
             // usuarioToolStripMenuItem
             // 

@@ -57,6 +57,11 @@ namespace ReyfiBurguer.UI.Registros
                 errorProvider1.SetError(NombreProductoTextBox, "El campo *Nombre del producto* esta vacio");
                 validar = true;
             }
+            if(NombreProductoTextBox.Text == "." || NombreProductoTextBox.Text == ";" || NombreProductoTextBox.Text == "/" || NombreProductoTextBox.Text == " * " || NombreProductoTextBox.Text == "-" || NombreProductoTextBox.Text == "+" || NombreProductoTextBox.Text == ":" || NombreProductoTextBox.Text == "@" || NombreProductoTextBox.Text == "#" || NombreProductoTextBox.Text == "!" || NombreProductoTextBox.Text == "{" || NombreProductoTextBox.Text == "}")
+            {
+                errorProvider1.SetError(NombreProductoTextBox, "Escriba un *Nombre del producto* valido");
+                validar = true;
+            }
             if (String.IsNullOrEmpty(TipoProductoComboBox.Text))
             {
                 errorProvider1.SetError(TipoProductoComboBox, "Seleccione un  *Tipo de producto*");
@@ -137,6 +142,7 @@ namespace ReyfiBurguer.UI.Registros
             }
             else
                 MessageBox.Show("No existente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Limpiar();
         }
     }
 }

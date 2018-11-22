@@ -52,16 +52,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CombosBLL.cs" />
     <Compile Include="BLL\ProductosBLL.cs" />
     <Compile Include="BLL\UsuariosBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Combos.cs" />
     <Compile Include="Entidades\Productos.cs" />
+    <Compile Include="Entidades\ProductosDetalle.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="InicioSesion.cs">
+    <Compile Include="InicioSecion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioSesion.Designer.cs">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <Compile Include="InicioSecion.Designer.cs">
+      <DependentUpon>InicioSecion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +80,12 @@
     <Compile Include="UI\MenuPrincipalCajero.Designer.cs">
       <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\rCombos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rCombos.Designer.cs">
+      <DependentUpon>rCombos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,8 +98,8 @@
     <Compile Include="UI\Registros\rUsuarios.Designer.cs">
       <DependentUpon>rUsuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="InicioSesion.resx">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <EmbeddedResource Include="InicioSecion.resx">
+      <DependentUpon>InicioSecion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuPrincipalCajero.resx">
       <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rCombos.resx">
+      <DependentUpon>rCombos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rProductos.resx">
       <DependentUpon>rProductos.cs</DependentUpon>
@@ -150,7 +162,10 @@
     <None Include="Resources\Add User Male_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripst\Scripst.sql" />
+    <None Include="Resources\Plus_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Scripst\Scripsts.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

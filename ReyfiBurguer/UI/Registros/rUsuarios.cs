@@ -60,6 +60,11 @@ namespace ReyfiBurguer.UI.Registros
                 errorProvider1.SetError(NombresTextBox, "El campo *Nombres* esta vacio");
                 validar = true;
             }
+            if (NombresTextBox.Text == "." || NombresTextBox.Text == ";" || NombresTextBox.Text == "/" || NombresTextBox.Text == " * " || NombresTextBox.Text == "-" || NombresTextBox.Text == "+" || NombresTextBox.Text == ":" || NombresTextBox.Text == "@" || NombresTextBox.Text == "#" || NombresTextBox.Text == "!" || NombresTextBox.Text == "{" || NombresTextBox.Text == "}")
+            {
+                errorProvider1.SetError(NombresTextBox, "Escriba un *Nombre* valido");
+                validar = true;
+            }
             if (String.IsNullOrEmpty(NombreUsuarioTextBox.Text))
             {
                 errorProvider1.SetError(NombreUsuarioTextBox, "El campo *Nombre de usuario* esta vacio");
@@ -68,6 +73,11 @@ namespace ReyfiBurguer.UI.Registros
             if (String.IsNullOrWhiteSpace(NombreUsuarioTextBox.Text))
             {
                 errorProvider1.SetError(NombreUsuarioTextBox, "El campo *Nombre de usuario* esta vacio");
+                validar = true;
+            }
+            if (NombreUsuarioTextBox.Text == "." || NombreUsuarioTextBox.Text == ";" || NombreUsuarioTextBox.Text == "/" || NombreUsuarioTextBox.Text == " * " || NombreUsuarioTextBox.Text == "-" || NombreUsuarioTextBox.Text == "+" || NombreUsuarioTextBox.Text == ":" || NombreUsuarioTextBox.Text == "@" || NombreUsuarioTextBox.Text == "#" || NombreUsuarioTextBox.Text == "!" || NombreUsuarioTextBox.Text == "{" || NombreUsuarioTextBox.Text == "}")
+            {
+                errorProvider1.SetError(NombreUsuarioTextBox, "Escriba un *Nombre de usuario* valido");
                 validar = true;
             }
             if (String.IsNullOrEmpty(ContraseñaTextBox.Text))
@@ -155,6 +165,7 @@ namespace ReyfiBurguer.UI.Registros
             }
             else
                 MessageBox.Show("No se pudo eliminar", "Fallido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Limpiar();
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)

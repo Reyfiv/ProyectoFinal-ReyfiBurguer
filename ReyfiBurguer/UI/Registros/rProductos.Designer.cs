@@ -185,6 +185,7 @@
             this.TipoProductoComboBox.Items.AddRange(new object[] {
             "Carne de Hamburgesa",
             "Carne de Whopper",
+            "2 Carnes de Whopper",
             "Nugets",
             "Filete de pollo",
             "Filete Crispy de pollo",
@@ -205,6 +206,7 @@
             this.DescripcionComboBox.Items.AddRange(new object[] {
             "A la parrilla",
             "Crujiente",
+            "Bebidas",
             "Fritos",
             "Postre"});
             this.DescripcionComboBox.Location = new System.Drawing.Point(196, 182);

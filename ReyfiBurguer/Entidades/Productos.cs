@@ -12,6 +12,7 @@ namespace ReyfiBurguer.Entidades
         public decimal Precio { get; set; }
         public string Descripcion { get; set; }
 
+
         public Productos()
         {
             ProductoId = 0;
