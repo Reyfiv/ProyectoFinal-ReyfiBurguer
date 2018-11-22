@@ -1,4 +1,5 @@
 ﻿using ReyfiBurguer.Entidades;
+using ReyfiBurguer.UI.Consultas;
 using ReyfiBurguer.UI.Registros;
 using System;
 
@@ -28,6 +29,21 @@ namespace ReyfiBurguer.UI
         {
             new rCombos().Show();
 
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new cProductos().Show();
+        }
+
+        private void comboToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new cCombos().Show();
+        }
+
+        private void usuarioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new cUsuarios().Show();
         }
     }
 }
