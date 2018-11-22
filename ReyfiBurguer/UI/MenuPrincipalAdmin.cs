@@ -45,5 +45,17 @@ namespace ReyfiBurguer.UI
         {
             new cUsuarios().Show();
         }
+
+        //cierra aplicacion desde la ventana
+        private void MenuPrincipalAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //cierra aplicacion desde item *cerrar sesion* 
+        private void cerrarSecionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

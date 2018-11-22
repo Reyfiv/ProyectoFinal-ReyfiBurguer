@@ -41,6 +41,7 @@
             this.comboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSecionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,14 +74,14 @@
             // 
             this.ventasToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Cash_Register_32px;
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.French_Fries_32px;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -88,7 +89,7 @@
             // 
             this.combosToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Lunchbox_32px;
             this.combosToolStripMenuItem.Name = "combosToolStripMenuItem";
-            this.combosToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.combosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.combosToolStripMenuItem.Text = "Combos";
             this.combosToolStripMenuItem.Click += new System.EventHandler(this.combosToolStripMenuItem_Click);
             // 
@@ -96,7 +97,7 @@
             // 
             this.usuarioToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Add_User_Male_32px;
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
@@ -145,10 +146,20 @@
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cerrarSecionToolStripMenuItem});
             this.salirToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.salir;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(62, 23);
             this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // cerrarSecionToolStripMenuItem
+            // 
+            this.cerrarSecionToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Add_User_Male_32px;
+            this.cerrarSecionToolStripMenuItem.Name = "cerrarSecionToolStripMenuItem";
+            this.cerrarSecionToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.cerrarSecionToolStripMenuItem.Text = "Cerrar secion";
+            this.cerrarSecionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSecionToolStripMenuItem_Click);
             // 
             // MenuPrincipalAdmin
             // 
@@ -164,6 +175,7 @@
             this.Name = "MenuPrincipalAdmin";
             this.Text = "Menu Principal (Administrador)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipalAdmin_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -185,5 +197,6 @@
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem comboToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSecionToolStripMenuItem;
     }
 }
