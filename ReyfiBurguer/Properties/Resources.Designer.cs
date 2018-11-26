@@ -93,6 +93,16 @@ namespace ReyfiBurguer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cash_in_Hand_32px {
+            get {
+                object obj = ResourceManager.GetObject("Cash in Hand_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cash_Register_32px {
             get {
                 object obj = ResourceManager.GetObject("Cash Register_32px", resourceCulture);

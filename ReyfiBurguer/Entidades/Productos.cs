@@ -1,6 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
+
 namespace ReyfiBurguer.Entidades
 {
     public class Productos

@@ -55,7 +55,13 @@ namespace ReyfiBurguer.UI
         //cierra aplicacion desde item *cerrar sesion* 
         private void cerrarSecionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            new InisioSesion().Show();
+        }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rVentas().Show();
         }
     }
 }

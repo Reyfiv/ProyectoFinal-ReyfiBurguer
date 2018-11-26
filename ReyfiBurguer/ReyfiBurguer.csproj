@@ -55,11 +55,14 @@
     <Compile Include="BLL\CombosBLL.cs" />
     <Compile Include="BLL\ProductosBLL.cs" />
     <Compile Include="BLL\UsuariosBLL.cs" />
+    <Compile Include="BLL\VentasBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Combos.cs" />
+    <Compile Include="Entidades\CombosDetalle.cs" />
     <Compile Include="Entidades\Productos.cs" />
     <Compile Include="Entidades\ProductosDetalle.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Entidades\Ventas.cs" />
     <Compile Include="InicioSecion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,12 +95,6 @@
     <Compile Include="UI\MenuPrincipalAdmin.Designer.cs">
       <DependentUpon>MenuPrincipalAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\MenuPrincipalCajero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\MenuPrincipalCajero.Designer.cs">
-      <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Registros\rCombos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +112,12 @@
     </Compile>
     <Compile Include="UI\Registros\rUsuarios.Designer.cs">
       <DependentUpon>rUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rVentas.Designer.cs">
+      <DependentUpon>rVentas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="InicioSecion.resx">
       <DependentUpon>InicioSecion.cs</DependentUpon>
@@ -141,9 +144,6 @@
     <EmbeddedResource Include="UI\MenuPrincipalAdmin.resx">
       <DependentUpon>MenuPrincipalAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\MenuPrincipalCajero.resx">
-      <DependentUpon>MenuPrincipalCajero.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rCombos.resx">
       <DependentUpon>rCombos.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rUsuarios.resx">
       <DependentUpon>rUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rVentas.resx">
+      <DependentUpon>rVentas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -192,6 +195,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripst\Scripsts.sql" />
+    <None Include="Resources\Cash in Hand_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

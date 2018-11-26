@@ -76,6 +76,7 @@
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
@@ -117,14 +118,14 @@
             // 
             this.ventasToolStripMenuItem1.Image = global::ReyfiBurguer.Properties.Resources.Cash_Register_32px;
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(140, 24);
             this.ventasToolStripMenuItem1.Text = "Ventas";
             // 
             // productosToolStripMenuItem1
             // 
             this.productosToolStripMenuItem1.Image = global::ReyfiBurguer.Properties.Resources.French_Fries_32px;
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(140, 24);
             this.productosToolStripMenuItem1.Text = "Productos";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.productosToolStripMenuItem1_Click);
             // 
@@ -132,7 +133,7 @@
             // 
             this.comboToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Lunchbox_32px;
             this.comboToolStripMenuItem.Name = "comboToolStripMenuItem";
-            this.comboToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.comboToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
             this.comboToolStripMenuItem.Text = "Combo";
             this.comboToolStripMenuItem.Click += new System.EventHandler(this.comboToolStripMenuItem_Click);
             // 
@@ -140,7 +141,7 @@
             // 
             this.usuarioToolStripMenuItem1.Image = global::ReyfiBurguer.Properties.Resources.Add_User_Male_32px;
             this.usuarioToolStripMenuItem1.Name = "usuarioToolStripMenuItem1";
-            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(140, 24);
             this.usuarioToolStripMenuItem1.Text = "Usuario";
             this.usuarioToolStripMenuItem1.Click += new System.EventHandler(this.usuarioToolStripMenuItem1_Click);
             // 
@@ -157,7 +158,7 @@
             // 
             this.cerrarSecionToolStripMenuItem.Image = global::ReyfiBurguer.Properties.Resources.Add_User_Male_32px;
             this.cerrarSecionToolStripMenuItem.Name = "cerrarSecionToolStripMenuItem";
-            this.cerrarSecionToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.cerrarSecionToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
             this.cerrarSecionToolStripMenuItem.Text = "Cerrar secion";
             this.cerrarSecionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSecionToolStripMenuItem_Click);
             // 

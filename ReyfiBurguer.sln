@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReyfiBurguer", "ReyfiBurguer\ReyfiBurguer.csproj", "{84FF80AF-57F1-46DA-BF51-0EDD922072DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReyfiBurguerTests", "ReyfiBurguerTests\ReyfiBurguerTests.csproj", "{3591BD56-6750-491C-A1F3-A8DBC1042859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{84FF80AF-57F1-46DA-BF51-0EDD922072DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FF80AF-57F1-46DA-BF51-0EDD922072DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FF80AF-57F1-46DA-BF51-0EDD922072DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3591BD56-6750-491C-A1F3-A8DBC1042859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3591BD56-6750-491C-A1F3-A8DBC1042859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3591BD56-6750-491C-A1F3-A8DBC1042859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3591BD56-6750-491C-A1F3-A8DBC1042859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

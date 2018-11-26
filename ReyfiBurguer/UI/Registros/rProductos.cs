@@ -131,7 +131,6 @@ namespace ReyfiBurguer.UI.Registros
         {
             int id = Convert.ToInt32(ProductoIdNumericUpDown.Value);
             Productos producto = ProductosBLL.Buscar(id);
-
             if (producto != null)
             {
 
@@ -142,7 +141,6 @@ namespace ReyfiBurguer.UI.Registros
             }
             else
                 MessageBox.Show("No existente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            Limpiar();
         }
     }
 }

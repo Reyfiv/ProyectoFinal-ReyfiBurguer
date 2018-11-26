@@ -10,8 +10,6 @@ namespace ReyfiBurguer.BLL
 {
     public class UsuariosBLL
     {
-        
-
         public static bool Guardar(Usuarios usuario)
         {
             bool paso = false;

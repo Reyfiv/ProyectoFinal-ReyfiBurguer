@@ -69,7 +69,7 @@ namespace ReyfiBurguer
                     else
                     {
                         MessageBox.Show("*Bienvenido usuario cajero*");
-                        MenuPrincipalCajero abrir = new MenuPrincipalCajero();
+                        rVentas abrir = new rVentas();
                         abrir.Show();
                         this.Hide();
                     }
@@ -81,7 +81,12 @@ namespace ReyfiBurguer
 
         private void CancelarButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void InisioSesion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

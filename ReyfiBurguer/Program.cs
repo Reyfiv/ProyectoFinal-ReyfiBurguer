@@ -1,5 +1,6 @@
 ﻿
 using ReyfiBurguer.UI;
+using ReyfiBurguer.UI.Consultas;
 using ReyfiBurguer.UI.Registros;
 using System;
 using System.Windows.Forms;

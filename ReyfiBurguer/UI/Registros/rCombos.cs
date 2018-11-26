@@ -13,7 +13,7 @@ namespace ReyfiBurguer.UI.Registros
     public partial class rCombos : Form
     {
         public List<ProductosDetalle> Detalle { get; set; }
-        public int FilaSelect { get; set; }
+       
 
         public rCombos()
         {
