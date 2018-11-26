@@ -91,6 +91,7 @@
             this.VentasProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.VentasProductosDataGridView.Location = new System.Drawing.Point(805, 28);
             this.VentasProductosDataGridView.Name = "VentasProductosDataGridView";
+            this.VentasProductosDataGridView.ReadOnly = true;
             this.VentasProductosDataGridView.Size = new System.Drawing.Size(542, 192);
             this.VentasProductosDataGridView.TabIndex = 5;
             // 
@@ -240,6 +241,7 @@
             this.VentasComboDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.VentasComboDataGridView.Location = new System.Drawing.Point(805, 265);
             this.VentasComboDataGridView.Name = "VentasComboDataGridView";
+            this.VentasComboDataGridView.ReadOnly = true;
             this.VentasComboDataGridView.Size = new System.Drawing.Size(542, 223);
             this.VentasComboDataGridView.TabIndex = 32;
             // 

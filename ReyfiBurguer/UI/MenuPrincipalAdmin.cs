@@ -63,5 +63,10 @@ namespace ReyfiBurguer.UI
         {
             new rVentas().Show();
         }
+
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new cVentas().Show();
+        }
     }
 }
