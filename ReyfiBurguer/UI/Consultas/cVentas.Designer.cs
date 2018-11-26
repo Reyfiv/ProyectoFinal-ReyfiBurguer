@@ -48,7 +48,6 @@
             this.FiltrarComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FiltrarComboBox.FormattingEnabled = true;
             this.FiltrarComboBox.Items.AddRange(new object[] {
-            "Todos",
             "Fecha",
             "Total"});
             this.FiltrarComboBox.Location = new System.Drawing.Point(14, 47);
@@ -140,6 +139,7 @@
             this.ImprimirButton.Text = "Imprimir";
             this.ImprimirButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ImprimirButton.UseVisualStyleBackColor = true;
+            this.ImprimirButton.Click += new System.EventHandler(this.ImprimirButton_Click);
             // 
             // BuscarButton
             // 
@@ -173,7 +173,7 @@
             this.Controls.Add(this.ConsultaDataGridView);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "cVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Ventas";

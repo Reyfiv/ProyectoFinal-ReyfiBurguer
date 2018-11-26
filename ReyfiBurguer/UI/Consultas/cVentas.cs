@@ -1,5 +1,6 @@
 ﻿using ReyfiBurguer.BLL;
 using ReyfiBurguer.Entidades;
+using ReyfiBurguer.UI.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace ReyfiBurguer.UI.Consultas
 {
     public partial class cVentas : Form
     {
+       private List<Ventas> Listaventas = new List<Ventas>();
 
         public cVentas()
         {
@@ -24,29 +26,31 @@ namespace ReyfiBurguer.UI.Consultas
         private void BuscarButton_Click(object sender, EventArgs e)
         {
             Expression<Func<Ventas, bool>> filtro = a => true;
-            var listado = new List<Ventas>();
-
-            if (CriterioTextBox.Text.Trim().Length > 0)
-            {
+           
                 switch (FiltrarComboBox.SelectedIndex)
                 {
-                    case 0://Todo
-                        listado = VentasBLL.GetList(p => true);
+                    case 0://Fecha
+                        filtro = a => a.Fecha >= FechaDesdeDateTimePicker.Value.Date && a.Fecha <= FechaHastaDateTimePicker.Value.Date; 
                         break;
-                    case 1://Fecha
-                        listado = VentasBLL.GetList(p => p.Fecha.Equals(CriterioTextBox.Text));
-                        break;
-                    case 3: //Total
-                        listado = VentasBLL.GetList(p => p.TotalAPagar.Equals(CriterioTextBox.Text));
-                        break;
+                    case 1://Total
+                    filtro = a => a.TotalAPagar.Equals(CriterioTextBox.Text);
+                    break;
                 }
 
-            }
-            else
-                listado = VentasBLL.GetList(p => true);
+            Listaventas = VentasBLL.GetList(filtro);
+            ConsultaDataGridView.DataSource = Listaventas;
+        }
 
-            ConsultaDataGridView.DataSource = null;
-            ConsultaDataGridView.DataSource = listado;
+        private void ImprimirButton_Click(object sender, EventArgs e)
+        {
+            if(Listaventas.Count == 0)
+            {
+                MessageBox.Show("No hay datos para Imprimir");
+                return;
+            }
+
+            VentasReportViewer reporteVentas = new VentasReportViewer(Listaventas);
+            reporteVentas.ShowDialog();
         }
     }
 }
